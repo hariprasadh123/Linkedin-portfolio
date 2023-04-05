@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Registration</title>
+
+    <style>
+        label{
+            width: 120px;
+            display: inline-block;
+
+        }
+
+        .form-feild{
+            margin: 10px;
+        }
+
+        input{
+            width: 200px;
+            height: 25px;
+        }
+
+        select{
+          width: 200px;
+          height: 24px;
+        }
+
+        textarea{
+            width: 200px;
+            height: 50px;
+        }
+
+        #gender label{
+          width: auto;
+          font-weight: 400;
+        }
+
+        #gender input{
+          width: auto;
+          height:auto;
+        }
+
+        #course label{
+          width: auto;
+          font-weight: 400;
+        }
+
+        #course input{
+          width: auto;
+          height:auto;
+        }
+        
+
+
+
+    </style>
+  </head>
+  <body>
+    <section style="padding: 10px">
+      <a href="../Class1/index.html">Home</a>
+      <a href="./indexClass2.html">Curriculam</a>
+      <a href="./Registration.html">Registration</a>
+    </section>
+
+    <section style="padding: 5px">
+      <form action="/register">
+        <div class="form-feild">
+          <label for="name">Name</label>
+          <!-- for- when we click the text it selects the text box -->
+          <input type="text" id="name" name="name" placeholder="Enter your name" />
+          <!-- type - to have the type-->
+        </div>
+
+        <div class="form-feild">
+          <label for="contact">Contact</label>
+          <input
+            type="number"
+            id="contact" name="contact"
+            placeholder="Enter your conatct number"
+           
+          />
+        </div>
+
+        <div class="form-feild">
+          <label for="email">Email</label>
+          <input
+            type="email"
+            id="email" name="email"
+            placeholder="Enter your email"
+            
+          />
+        </div>
+        <div class="form-feild">
+          <label for="text">Description</label>
+          <input
+            type="text"
+            id="description"
+            name="description"
+            placeholder="Enter your details"
+            style="height: 50px"
+          />
+        </div>
+        <div class="form-feild" id="gender">
+          <div class="gender"><b>Select Gender: </b></div>
+          <label for="male">Male: </label>
+          <input type="radio" id="male" name="gender" value="male" />
+          <label for="female">Female: </label>
+          <input type="radio" id="female" name="gender" value="female" />
+        </div>
+        <div class="form-feild" id="course">
+          <div class="course"><b>Select course: </b></div>
+          <label for="web">Web development</label>
+          <input type="checkbox" id="web" name="course" value="web" style="width: auto; height: auto;"/>
+          <label for="fullstack">Fullstack development</label>
+          <input type="checkbox" id="fullstack" name="course" value="fullstack" style="width: auto; height: auto;"/>
+        </div>
+        <div class="form-feild">
+          <label for="city">Select city</label>
+          <select id="city" name="city">
+            <option value="BLR">Bangalore</option>
+            <option value="CN">Chennai</option>
+            <option value="IXB">Mumbai</option>
+            <option value="NCR">New Delhi</option>
+          </select>
+        </div>
+        <div class="form-feild">
+          <label for="password">Set Password</label>
+          <input type="password" id="password" name="password" />
+        </div>
+        <div>
+          <button type="submit">Register</button>
+        </div>
+      </form>
+    </section>
+  </body>
+</html>
+
+<!--http://127.0.0.1:5500/register?
+name=Hariprasadh&contact=543
+&email=hariprasadh.vasimalai%40tyson.com
+&description=fhj+sg
+&gender=male
+&course=web
+&course=fullstack
+&city=IXB
+&password=sgwsrrg -->
